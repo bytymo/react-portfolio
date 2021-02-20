@@ -1,4 +1,4 @@
-import './App.css'
+import './css/App.css'
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import About from './components/About'
@@ -16,12 +16,12 @@ export default function App() {
         <Navbar />
         <Header />
         <div className='container'>
-          <Intro />
+          <Intro path='/#about' />
           <About />
-          <Portfolio />
+          <Portfolio path='/#portfolio' />
           <Contact />
-          <Footer />
         </div>
+        <Footer />
       </div>
     </Router>
   )

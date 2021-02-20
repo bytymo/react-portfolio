@@ -3,14 +3,11 @@ import React from 'react'
 const About = () => {
   return (
     <div className='component'>
-      <h2 className='text-light'>About Me Section</h2><hr/>
-      <div className="card mb-4">
-        <img className="card-img-top" src='../images/profile.jpg' alt="profile of myself sitting on a couch looking at a laptop on the coffee table in front. The book The Subtle Art of Not Giving a F*ck is to the left of the laptop and a black coffee mug is to the right alongside my cellphone." />
-        
-        <div className="card-body bg-gold">
-          <p className="text-dark signature">Byron Mosley</p>
-        </div>
-      </div>
+      <h2 className='text-light'>About Me</h2><hr/>
+      <figure className="figure mb-4">
+        <img className="figure-img img-fluid rounded" src='../images/profile.jpg' alt="profile of myself sitting on a couch looking at a laptop on the coffee table in front. The book The Subtle Art of Not Giving a F*ck is to the left of the laptop and a black coffee mug is to the right alongside my cellphone." />
+        <figcaption className="figure-caption signature bg-gold text-dark p-2">Byron Mosley</figcaption>
+      </figure>
       <div className="short-bio text-light">
         <p>I am a full stack web developer and web designer based out of Phoenix, AZ. I work with the PERN stack, which relies heavily on JavaScript on both the front and back end. I strongly look forward to working in a group of programmers so I may not only learn but reinforce my understanding of code. Whether it be exploring my artistic ability through web design or my critical thinking analysis and testing my logic through web development, I am very excited to connect with people and contribute to the growth of the web.</p>
         

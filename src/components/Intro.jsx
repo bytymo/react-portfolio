@@ -2,7 +2,7 @@ import React from 'react'
 
 const Intro = () => {
   return (
-    <div className='component'>
+    <div className='component' id='about'>
       <h2 className='text-light'>Who I am</h2><hr />
       <div className="card-deck text-light">
           <div className="card">

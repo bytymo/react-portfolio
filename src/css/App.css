@@ -6,14 +6,17 @@
 
 .App {
   text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .gold,
+h1::first-letter,
 h2::first-letter {
   color: var(--gold);
 }
 
-.gold:hover {
+.nav-item.gold:hover {
   color: var(--gold);
   text-decoration: none;
   border-bottom: 1px solid var(--gold);
@@ -61,3 +64,34 @@ hr {
 }
 
 /* About Me */
+
+/* Portfolio */
+
+/* Contact */
+#contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/bg-contact.jpg') center center/cover;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--gold);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.initials {
+  font-size: 32px;
+}
+
+.icon {
+  font-size: 32px;
+  color: #eaeaea;
+}
+
+.icon:hover {
+  color: #d5ad36;
+}
