@@ -1,38 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Ubuntu:wght@300&display=swap&family=Homemade+Apple&display=swap');
+
+:root {
+  --gold: #d5ad36;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gold,
+h2::first-letter {
+  color: var(--gold);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gold:hover {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-gold {
+  background-color: var(--gold);
 }
 
-.App-link {
-  color: #61dafb;
+/* General */
+
+body,
+form > * {
+  font-family: Ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.component {
+  margin-bottom: 30px;
 }
+
+h1,
+.header-font,
+.initials,
+h2::first-letter {
+  font-family: 'Major Mono Display';
+}
+
+.signature {
+  font-family: 'Homemade Apple';
+  font-size: larger;
+  margin-bottom: 0;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #333, var(--gold), #333);
+}
+
+/* Intro */
+
+.card {
+  border: var(--gold) 3px double;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* About Me */
