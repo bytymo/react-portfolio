@@ -2,6 +2,7 @@
 
 :root {
   --gold: #d5ad36;
+  --darkgrey: #333;
 }
 
 .App {
@@ -53,12 +54,36 @@ h2::first-letter {
 hr {
   border: 0;
   height: 1px;
-  background-image: -webkit-linear-gradient(left, #333, var(--gold), #333);
+  background-image: -webkit-linear-gradient(
+    left,
+    var(--darkgrey),
+    var(--gold),
+    var(--darkgrey)
+  );
+}
+
+/* Navbar */
+
+.navmenu {
+  background-color: rgba(51, 51, 51, 0.8);
+}
+
+/* Header */
+.header {
+  height: 100vh;
+}
+
+.header video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Intro */
 
-.card {
+.definition {
   border: var(--gold) 3px double;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -68,13 +93,25 @@ hr {
 /* Portfolio */
 
 /* Contact */
-#contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../images/bg-contact.jpg') center center/cover;
+@media screen and (min-width: 575px) {
+  #contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../images/bg-contact.jpg') center center/cover;
+  }
 }
 
 textarea {
   resize: none;
+}
+
+/* Contact Cards */
+.contact-cards {
+  background-color: var(--darkgrey);
+  border: none;
+}
+
+.contact-card {
+  color: var(--light);
 }
 
 /* Footer */
@@ -89,9 +126,10 @@ footer {
 
 .icon {
   font-size: 32px;
-  color: #eaeaea;
+  color: var(--light);
 }
 
-.icon:hover {
+.icon:hover,
+.contact-card:hover {
   color: #d5ad36;
 }

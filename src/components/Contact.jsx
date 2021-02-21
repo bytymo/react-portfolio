@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactButtons from './ContactButtons'
 
 const Contact = () => {
   return (
@@ -6,7 +7,7 @@ const Contact = () => {
       <h2 className='text-light'>Contact Me</h2><hr/>
       <div className="row" id='contact'>
         <form action="" className='col-md-6 p-3'>
-        <h6 className='text-left'>Looking for a quote? Wanting to collaborate? Or simply wishing to say hello? Fill out the form below!</h6>
+        <h6 className='text-left text-light'>Looking for a quote? Wanting to collaborate? Or simply wishing to say hello? Fill out the form below!</h6>
         <div className="form-group">
           <input className='form-control' type="text" name="name" id="name" placeholder='Name' />
         </div>
@@ -19,6 +20,8 @@ const Contact = () => {
         <button type="submit" className='btn btn-outline-warning float-left'>Submit</button>
       </form>
       </div>
+
+      <ContactButtons />
     </div>
   )
 }

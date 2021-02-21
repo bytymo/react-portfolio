@@ -13,8 +13,8 @@ export default function App() {
   return (
     <Router>
       <div className='App'>
-        <Navbar />
         <Header />
+        <Navbar />
         <div className='container'>
           <Intro path='/#about' />
           <About />
